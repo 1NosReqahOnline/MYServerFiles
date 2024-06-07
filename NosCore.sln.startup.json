@@ -1,0 +1,69 @@
+/*
+    This is a configuration file for the SwitchStartupProject Visual Studio Extension
+    See https://bitbucket.org/thirteen/switchstartupproject/src/tip/Configuration.md
+*/
+{
+  /*  Configuration File Version  */
+  "Version": 3,
+
+  /*  Create an item in the dropdown list for each project in the solution?  */
+  "ListAllProjects": false,
+
+  "MultiProjectConfigurations": {
+    "Login + Master": {
+      "Projects": {
+        "NosCore.LoginServer": {},
+        "NosCore.MasterServer": {}
+      }
+    },
+    "World + Login + Master": {
+      "Projects": {
+        "NosCore.WorldServer": {},
+        "NosCore.LoginServer": {},
+        "NosCore.MasterServer": {}
+      }
+    },
+    "World + Login + Master + WebApi": {
+      "Projects": {
+        "NosCore.WorldServer": {},
+        "NosCore.LoginServer": {},
+        "NosCore.MasterServer": {},
+        "NosCore.WebApi": {}
+      }
+    },
+    "All": {
+      "Projects": {
+        "NosCore.WorldServer": {},
+        "NosCore.LoginServer": {},
+        "NosCore.MasterServer": {},
+        "NosCore.Parser": {},
+        "NosCore.WebApi": {}
+      }
+    },
+    "LoginServer": {
+      "Projects": {
+        "NosCore.LoginServer": {}
+      }
+    },
+    "MasterServer": {
+      "Projects": {
+        "NosCore.MasterServer": {}
+      }
+    },
+    "WorldServer": {
+      "Projects": {
+        "NosCore.WorldServer": {}
+      }
+    },
+    "Parser": {
+      "Projects": {
+        "NosCore.Parser": {}
+      }
+    },
+    "WebApi": {
+      "Projects": {
+        "NosCore.WebApi": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <TieredCompilation>true</TieredCompilation>
+    <LangVersion>preview</LangVersion>
+    <UseNETCoreGenerator>true</UseNETCoreGenerator>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+
+    <!-- Enable output of generated files back into our Generated directory -->
+    <EmitCompilerGeneratedFiles>false</EmitCompilerGeneratedFiles>
+    <CompilerGeneratedFilesOutputPath>Generated</CompilerGeneratedFilesOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\..\build\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\..\build\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\tools\NosCore.DtoGenerator\NosCore.DtoGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+    <AdditionalFiles Include="..\NosCore.Database\NosCore.Database.csproj" />
+    <Compile Condition="Exists('$(CompilerGeneratedFilesOutputPath)\*\**\*.cs')" Remove="$(CompilerGeneratedFilesOutputPath)\*\**\*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Dto\I18NGenerated\**" />
+    <Compile Remove="Dto\StaticEntitiesGenerated\**" />
+    <Compile Remove="StaticEntities\Text\**" />
+    <EmbeddedResource Remove="Dto\I18NGenerated\**" />
+    <EmbeddedResource Remove="Dto\StaticEntitiesGenerated\**" />
+    <EmbeddedResource Remove="StaticEntities\Text\**" />
+    <None Remove="Dto\I18NGenerated\**" />
+    <None Remove="Dto\StaticEntitiesGenerated\**" />
+    <None Remove="StaticEntities\Text\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="2023.3.0" />
+    <PackageReference Include="Mapster" Version="7.4.0" />
+    <PackageReference Include="Mapster.JsonNet" Version="1.1.1" />
+    <PackageReference Include="NosCore.FastMember" Version="1.5.0" />
+    <PackageReference Include="NosCore.Packets" Version="15.0.0" />
+    <PackageReference Include="NodaTime" Version="3.1.10" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Resource\LocalizedResources.Designer.cs">
+      <DependentUpon>LocalizedResources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resource\LocalizedResources.resx">
+      <LastGenOutput>LocalizedResources.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Enumerations\Account\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>NosCore.Parser</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NosCore.Analyzers" Version="2.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>

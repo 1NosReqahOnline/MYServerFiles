@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACCOUNT_ARRIVED" xml:space="preserve">
+    <value>{0} ID'li kullanıcı sunucuya giriş yaptı.</value>
+  </data>
+  <data name="ADMINISTRATOR" xml:space="preserve">
+    <value>Yetkili</value>
+  </data>
+  <data name="ALREADY_BLACKLISTED" xml:space="preserve">
+    <value>Zaten karalistede!</value>
+  </data>
+  <data name="ASK_BIND" xml:space="preserve">
+    <value>Bu eşyayı bağlamak istiyor musun?</value>
+  </data>
+  <data name="AT_LEAST_ONE_FILE_MISSING" xml:space="preserve">
+    <value>Bir veya daha fazla gerekli dosya eksik, tüm dosyaları tamamladıktan sonra tekrar deneyiniz.</value>
+  </data>
+  <data name="AUTHENTICATED_SUCCESS" xml:space="preserve">
+    <value>İstemci : {1} başarıyla doğrulandı.</value>
+  </data>
+  <data name="AUTH_ERROR" xml:space="preserve">
+    <value>Kimlik doğrulama başarısız.</value>
+  </data>
+  <data name="AUTH_INCORRECT" xml:space="preserve">
+    <value>Geçersiz kimlik bilgileri.</value>
+  </data>
+  <data name="BAD_DROP_AMOUNT" xml:space="preserve">
+    <value>Bu eşya düşürülemez.</value>
+  </data>
+  <data name="CANT_CHANGE_SAME_CLASS" xml:space="preserve">
+    <value>Zaten aynı meslektesin!</value>
+  </data>
+  <data name="CANT_FIND_CHARACTER" xml:space="preserve">
+    <value>Kullanıcı bulunamadı.</value>
+  </data>
+  <data name="CARDS_PARSED" xml:space="preserve">
+    <value>{0} Kart işlendi.</value>
+  </data>
+  <data name="CHANNEL" xml:space="preserve">
+    <value>Kanal</value>
+  </data>
+  <data name="CHANNEL_WILL_EXIT" xml:space="preserve">
+    <value>Bu kanal bir kaç saniye içinde kapatılacak.</value>
+  </data>
+  <data name="CHARACTER_NOT_INIT" xml:space="preserve">
+    <value>Karakter yüklenmedi.</value>
+  </data>
+  <data name="CLIENT_ARRIVED" xml:space="preserve">
+    <value>İstemci bağlandı, ID {0}</value>
+  </data>
+  <data name="CLIENT_DISCONNECTED" xml:space="preserve">
+    <value>İstemci bağlantısı koptu. tId = {0}</value>
+  </data>
+  <data name="CONNECTION_LOST" xml:space="preserve">
+    <value>Bağlantı koptu.</value>
+  </data>
+  <data name="CORRUPTED_KEEPALIVE" xml:space="preserve">
+    <value>{0} Id'li İstemci hatalı şekilde devam ediyor.</value>
+  </data>
+  <data name="CORRUPT_PACKET" xml:space="preserve">
+    <value> {0} Bu paket hatalı veya paketin konumu geçersiz. İçerik: {1}</value>
+  </data>
+  <data name="DATABASE_INITIALIZED" xml:space="preserve">
+    <value>Veritabanı başarıyla yüklendi.</value>
+  </data>
+  <data name="DATABASE_NOT_UPTODATE" xml:space="preserve">
+    <value>Veritabanı güncel olmayabilir. Lütfen sağlayıcıyla konuşun.</value>
+  </data>
+  <data name="DONE" xml:space="preserve">
+    <value>Birleştirme işlemi bitti.</value>
+  </data>
+  <data name="DROP_MAP_FULL" xml:space="preserve">
+    <value>Bu haritada çok fazla eşya var. Lütfen daha sonra tekrar deneyiniz.</value>
+  </data>
+  <data name="ENTER_PATH" xml:space="preserve">
+    <value>Lütfen parse etmek (işlemek) istediğiniz dosyaların konumunu giriniz.</value>
+  </data>
+  <data name="ERROR_CHANGE_MAP" xml:space="preserve">
+    <value>Harita değiştirilirken karakter de değişti. Komutları kötüye kullanmayınız. {0}</value>
+  </data>
+  <data name="GROUPREQUESTTYPE_UNKNOWN" xml:space="preserve">
+    <value>Bilinmeyen grup daveti türü.</value>
+  </data>
+  <data name="HANDLER_NOT_FOUND" xml:space="preserve">
+    <value>{0} paketi için işleyici bulunamadı.</value>
+  </data>
+  <data name="I18N_ACTDESC_PARSED" xml:space="preserve">
+    <value>{0} I18N Act dosyaları işlendi! Bölge: {1}</value>
+  </data>
+  <data name="I18N_BCARD_PARSED" xml:space="preserve">
+    <value>{0} I18N BKartları işlendi! Bölge: {1}</value>
+  </data>
+  <data name="I18N_CARD_PARSED" xml:space="preserve">
+    <value>{0} I18N Kart işlendi! Bölge: {1}</value>
+  </data>
+  <data name="I18N_ITEM_PARSED" xml:space="preserve">
+    <value>{0} I18N Eşya işlendi! Bölge: {1}</value>
+  </data>
+  <data name="I18N_MAPIDDATA_PARSED" xml:space="preserve">
+    <value>{0} I18N Harita bilgisi işlendi! Bölge: {1}</value>
+  </data>
+  <data name="I18N_MAPPOINTDATA_PARSED" xml:space="preserve">
+    <value>{0} I18N Harita noktası işlendi! Bölge: {1}</value>
+  </data>
+  <data name="I18N_MPCMONSTER_PARSED" xml:space="preserve">
+    <value>{0} I18N NPC/Canavar işlendi! Bölge: {1}</value>
+  </data>
+  <data name="I18N_NPCMONSTERTALK_PARSED" xml:space="preserve">
+    <value>{0} I18N NPC/Canavar diyaloğu işlendi! Bölge: {1}</value>
+  </data>
+  <data name="I18N_QUEST_PARSED" xml:space="preserve">
+    <value>{0} I18N Görev işlendi! Bölge: {1}</value>
+  </data>
+  <data name="I18N_SKILL_PARSED" xml:space="preserve">
+    <value>{0} I18N Büyü/Beceri işlendi! Bölge: {1}</value>
+  </data>
+  <data name="INVALID_ACCOUNT" xml:space="preserve">
+    <value>Hatalı kullanıcı adı!</value>
+  </data>
+  <data name="INVALID_PASSWORD" xml:space="preserve">
+    <value>Parola hatalı!</value>
+  </data>
+  <data name="INVITETYPE_UNKNOWN" xml:space="preserve">
+    <value>Bilinmeyen davet türü.</value>
+  </data>
+  <data name="ITEMS_LOADED" xml:space="preserve">
+    <value>{0} Eşya yüklendi.</value>
+  </data>
+  <data name="ITEMS_PARSED" xml:space="preserve">
+    <value>{0} Eşya işlendi.</value>
+  </data>
+  <data name="LANGUAGE_MISSING" xml:space="preserve">
+    <value>Eksik dil dosyaları var: {0}</value>
+  </data>
+  <data name="MAPMONSTERS_LOADED" xml:space="preserve">
+    <value>{0} Harita canavarları yüklendi!</value>
+  </data>
+  <data name="MAPNPCS_LOADED" xml:space="preserve">
+    <value>{0} Harita NPC'leri yüklendi!</value>
+  </data>
+  <data name="MAPS_LOADED" xml:space="preserve">
+    <value>{0} Harita yüklendi!</value>
+  </data>
+  <data name="MAPS_PARSED" xml:space="preserve">
+    <value>{0} Harita işlendi!</value>
+  </data>
+  <data name="MAPTYPES_PARSED" xml:space="preserve">
+    <value>{0} Harita türü işlendi!</value>
+  </data>
+  <data name="MAP_DONT_EXIST" xml:space="preserve">
+    <value>Böyle bir harita yok!</value>
+  </data>
+  <data name="MASTER_SERVER_PING" xml:space="preserve">
+    <value>Ana Sunucu'ya ping gönder.</value>
+  </data>
+  <data name="MASTER_SERVER_PING_FAILED" xml:space="preserve">
+    <value>Ping gönderme işlemi başarısız.</value>
+  </data>
+  <data name="MASTER_SERVER_RETRY" xml:space="preserve">
+    <value>Ana Sunucu'ya bağlanılamadı. {0} saniye içerisinde tekrar denenecek.</value>
+  </data>
+  <data name="MONSTERS_PARSED" xml:space="preserve">
+    <value>{0} Harita canavarları işlendi!</value>
+  </data>
+  <data name="NOT_IN_BLACKLIST" xml:space="preserve">
+    <value>Bu kullanıcı karalistende değil!</value>
+  </data>
+  <data name="NO_MAP" xml:space="preserve">
+    <value>Harita yok. Sunucunun çalışması için en azından NosVille olmalı!</value>
+  </data>
+  <data name="NO_SPECIAL_PROPERTIES_WEARABLE" xml:space="preserve">
+    <value>Giyilebilir özellik yok!</value>
+  </data>
+  <data name="NPCMONSTERS_LOADED" xml:space="preserve">
+    <value>{0} Harita canavarları yüklendi!</value>
+  </data>
+  <data name="NPCMONSTERS_PARSED" xml:space="preserve">
+    <value>{0} Harita canavarları işlendi!</value>
+  </data>
+  <data name="NPCS_PARSED" xml:space="preserve">
+    <value>{0} Harita NPC'leri işlendi</value>
+  </data>
+  <data name="PARSE_ACCOUNTS" xml:space="preserve">
+    <value>Hesapları işlemek (aktarmak) istiyor musun?</value>
+  </data>
+  <data name="PARSE_ALL" xml:space="preserve">
+    <value>Herşeyi işlemek (aktarmak) istiyor musun?</value>
+  </data>
+  <data name="PARSE_CARDS" xml:space="preserve">
+    <value>Kartları işlemek (aktarmak) istiyor musun?</value>
+  </data>
+  <data name="PARSE_DROPS" xml:space="preserve">
+    <value>Dropları işlemek (aktarmak) istiyor musun?</value>
+  </data>
+  <data name="PARSE_I18N" xml:space="preserve">
+    <value>I18N'leri işlemek (aktarmak) istiyor musun?</value>
+  </data>
+  <data name="PARSE_ITEMS" xml:space="preserve">
+    <value>Eşyaları işlemek (aktarmak) istiyor musun?</value>
+  </data>
+  <data name="PARSE_MAPNPCS" xml:space="preserve">
+    <value>Harita NPC'lerini işlemek (aktarmak) istiyor musun?</value>
+  </data>
+  <data name="PARSE_MAPS" xml:space="preserve">
+    <value>Haritaları işlemek (aktarmak) istiyor musun?</value>
+  </data>
+  <data name="PARSE_MAPTYPES" xml:space="preserve">
+    <value>Harita türlerini işlemek (aktarmak) istiyor musun?</value>
+  </data>
+  <data name="PARSE_MONSTERS" xml:space="preserve">
+    <value>Canavarları işlemek (aktarmak) istiyor musun?</value>
+  </data>
+  <data name="PARSE_NPCMONSTERDATA" xml:space="preserve">
+    <value>NPC/Canavar bilgilerini işlemek (aktarmak) istiyor musun?</value>
+  </data>
+  <data name="PARSE_NPCMONSTERS" xml:space="preserve">
+    <value>NPC'leri işlemek (aktarmak) istiyor musun?</value>
+  </data>
+  <data name="PARSE_PORTALS" xml:space="preserve">
+    <value>Portalları işlemek (aktarmak) istiyor musun?</value>
+  </data>
+  <data name="PARSE_QUESTS" xml:space="preserve">
+    <value>Görevleri işlemek (aktarmak) istiyor musun?</value>
+  </data>
+  <data name="PARSE_RECIPES" xml:space="preserve">
+    <value>Üretim ve Tarifleri işlemek (aktarmak) istiyor musun?</value>
+  </data>
+  <data name="PARSE_SHOPITEMS" xml:space="preserve">
+    <value>Market eşyalarını işlemek (aktarmak) istiyor musun?</value>
+  </data>
+  <data name="PARSE_SHOPS" xml:space="preserve">
+    <value>Marketleri işlemek (aktarmak) istiyor musun?</value>
+  </data>
+  <data name="PARSE_SHOPSKILLS" xml:space="preserve">
+    <value>Market büyülerini (Calvin vb.) işlemek (aktarmak) istiyor musun?</value>
+  </data>
+  <data name="PARSE_SKILLS" xml:space="preserve">
+    <value>Büyüleri işlemek (aktarmak) istiyor musun?</value>
+  </data>
+  <data name="PARSE_TELEPORTERS" xml:space="preserve">
+    <value>Işınlayıcıları işlemek (aktarmak) istiyor musun?</value>
+  </data>
+  <data name="PARSE_TIMESPACES" xml:space="preserve">
+    <value>Uzay-Zaman taşlarını işlemek (aktarmak) istiyor musun?</value>
+  </data>
+  <data name="POCKETTYPE_UNKNOWN" xml:space="preserve">
+    <value>Bilinmeyen cep türü.</value>
+  </data>
+  <data name="PORTALS_PARSED" xml:space="preserve">
+    <value>{0} Portal işlendi!</value>
+  </data>
+  <data name="REGISTRED_ON_MASTER" xml:space="preserve">
+    <value>Ana Sunucu'ya bağlanıldı.</value>
+  </data>
+  <data name="REPUTATION_CHANGED" xml:space="preserve">
+    <value>İtibarın değişti!</value>
+  </data>
+  <data name="RESPAWNTYPE_PARSED" xml:space="preserve">
+    <value>{0} RespawnTypes Parsed!</value>
+  </data>
+  <data name="SAVING_ALL" xml:space="preserve">
+    <value>Tüm bilgiler kaydediliyor!</value>
+  </data>
+  <data name="SHOPITEMS_LOADED" xml:space="preserve">
+    <value>{0} Market eşyaları yüklendi!</value>
+  </data>
+  <data name="SHOPITEMS_PARSED" xml:space="preserve">
+    <value>{0} Market eşyaları işlendi!</value>
+  </data>
+  <data name="SHOPS_LOADED" xml:space="preserve">
+    <value>{0} Market yüklendi!</value>
+  </data>
+  <data name="SHOPS_PARSED" xml:space="preserve">
+    <value>{0} Market işlendi!</value>
+  </data>
+  <data name="SKILLS_PARSED" xml:space="preserve">
+    <value>{0} Büyü işlendi!</value>
+  </data>
+  <data name="SP_NOPOINTS" xml:space="preserve">
+    <value>Dönüşüm için yeterli uzmanlık puanın yok.</value>
+  </data>
+  <data name="SUCCESSFULLY_LOADED" xml:space="preserve">
+    <value>Başarıyla yüklendi!</value>
+  </data>
+  <data name="TOO_RICH_SELLER" xml:space="preserve">
+    <value>Satıcı iade işlemi için yeterli alana sahip değil.</value>
+  </data>
+  <data name="UNABLE_TO_REQUEST_GROUP" xml:space="preserve">
+    <value>Grup daveti gönderilemedi!</value>
+  </data>
+  <data name="UNKNOWN_EQUIPMENTTYPE" xml:space="preserve">
+    <value>Bilinmeyen ekipman türü: {0}</value>
+  </data>
+  <data name="UNKNOWN_PICKERTYPE" xml:space="preserve">
+    <value>Bilinmiyor!</value>
+  </data>
+  <data name="UNKWNOWN_RECEIVERTYPE" xml:space="preserve">
+    <value>Bilinmeyen üretme türü.</value>
+  </data>
+  <data name="USE_SP_WITHOUT_SP_ERROR" xml:space="preserve">
+    <value>Geçersiz Uzmanlık Kartı!</value>
+  </data>
+  <data name="USER_IS_NOT_A_FRIEND" xml:space="preserve">
+    <value>Kullanıcı arkadaşın değil!</value>
+  </data>
+  <data name="USER_NOT_CONNECTED" xml:space="preserve">
+    <value>Kullanıcı aktif değil!</value>
+  </data>
+  <data name="VISUALENTITY_DOES_NOT_EXIST" xml:space="preserve">
+    <value>Sanal değer geçersiz! {0}</value>
+  </data>
+  <data name="VISUALTYPE_UNKNOWN" xml:space="preserve">
+    <value>Bilinmeyen sanal tip! {0}</value>
+  </data>
+  <data name="CANNOT_TRADE_NOT_TRADABLE_ITEM" xml:space="preserve">
+    <value>Bu eşyayı değiştiremezsin!</value>
+  </data>
+  <data name="LOADING_MAPINSTANCES" xml:space="preserve">
+    <value>Harita durumları yükleniyor.</value>
+  </data>
+  <data name="SUPPORT" xml:space="preserve">
+    <value>Destek</value>
+  </data>
+  <data name="UPDATE_GOLD" xml:space="preserve">
+    <value>Altının güncellendi!</value>
+  </data>
+  <data name="PACKET_USED_WITHOUT_CHARACTER" xml:space="preserve">
+    <value>{0} Paketi karakter olmadan kullanılmaya çalışılıyor!</value>
+  </data>
+  <data name="BANK_FULL" xml:space="preserve">
+    <value>Banka hesabın dolu!</value>
+  </data>
+  <data name="CANT_MOVE_ITEM_IN_SHOP" xml:space="preserve">
+    <value>Marketteki eşyaları hareket ettiremezsin.</value>
+  </data>
+  <data name="CANT_USE_ITEM_IN_SHOP" xml:space="preserve">
+    <value>Marketteki eşyaları kullanamazsın.</value>
+  </data>
+  <data name="FRIEND_REQUEST_DISCONNECTED" xml:space="preserve">
+    <value>Arkadaşlık isteğin gönderilemedi. Kullanıcı çevrimdışı.</value>
+  </data>
+  <data name="INVALID_EXCHANGE" xml:space="preserve">
+    <value>Sadece değiştirilebilir eşyaları takas edebilirsin.</value>
+  </data>
+  <data name="INVALID_EXCHANGE_LIST" xml:space="preserve">
+    <value>Geçersiz takas listesi.</value>
+  </data>
+  <data name="NOT_ENOUGH_GOLD" xml:space="preserve">
+    <value>Yeterli altının yok!</value>
+  </data>
+  <data name="PLAYER_IN_SHOP" xml:space="preserve">
+    <value>{0} isimli kullanıcı alışverişte.</value>
+  </data>
+  <data name="USER_NOT_IN_EXCHANGE" xml:space="preserve">
+    <value>Kullanıcı takasta değil!</value>
+  </data>
+  <data name="QUESTS_PARSED" xml:space="preserve">
+    <value>{0} Görev işlendi!</value>
+  </data>
+  <data name="SCRIPTS_LOADED" xml:space="preserve">
+    <value>{0} Script yüklendi!</value>
+  </data>
+  <data name="QUESTREWARDS_LOADED" xml:space="preserve">
+    <value>{0} Görev ödülü yüklendi!</value>
+  </data>
+  <data name="QUESTOBJECTIVES_LOADED" xml:space="preserve">
+    <value>{0} Görev hedefi yüklendi!</value>
+  </data>
+  <data name="QUESTS_LOADED" xml:space="preserve">
+    <value>{0} Görev yüklendi!</value>
+  </data>
+  <data name="NPCMONSTERSTALKS_LOADED" xml:space="preserve">
+    <value>{0} NPC-Canavar diyaloğu yüklendi!</value>
+  </data>
+  <data name="NPCTALKS_PARSED" xml:space="preserve">
+    <value>{0} NPC diyaloğu işlendi!</value>
+  </data>
+  <data name="SCRIPTS_PARSED" xml:space="preserve">
+    <value>{0} Script işlendi!</value>
+  </data>
+  <data name="ACTS_PARTS_PARSED" xml:space="preserve">
+    <value>{0} Act bölümleri işlendi!</value>
+  </data>
+  <data name="QUEST_PRIZES_PARSED" xml:space="preserve">
+    <value>{0} Görev ödülleri işlendi!</value>
+  </data>
+  <data name="ITEM_GIFTED" xml:space="preserve">
+    <value>{0} Hediye edildi.</value>
+  </data>
+  <data name="NOT_IN_FRIENDLIST" xml:space="preserve">
+    <value>Arkadaşın değil.</value>
+  </data>
+  <data name="SPEAKER" xml:space="preserve">
+    <value>Hoparlör</value>
+  </data>
+  <data name="UNKNOWN" xml:space="preserve">
+    <value>Bilinmiyor</value>
+  </data>
+  <data name="TRY_REMOVE_FAILED" xml:space="preserve">
+    <value>Silme işlemi gerçekleştirilemedi.</value>
+  </data>
+  <data name="SHOPSKILLS_LOADED" xml:space="preserve">
+    <value>{0} Market becerileri yüklendi!</value>
+  </data>
+  <data name="ITEM_NOT_FOUND" xml:space="preserve">
+    <value>Eşya bulunamadı.</value>
+  </data>
+  <data name="PARSE_SCRIPTS" xml:space="preserve">
+    <value>Scriptleri işlemek (aktarmak)istiyor musun?</value>
+  </data>
+  <data name="QUEST_NOT_FOUND" xml:space="preserve">
+    <value>Görev bulunamadı.</value>
+  </data>
+</root>
